@@ -15,13 +15,9 @@ body {
     font-weight: 400;
 }
 
-* {
-    margin: 0;
-    padding: 0;
-}
 
 .principal {
-    background-image: urr("imag/Background.png");
+    background-image: url("Background.png");
     background-repeat: no-repeat;
     background-size: contain;
     align-items: center;
@@ -142,7 +138,7 @@ body {
 
 .rodape {
     text-align: center;
-    margin: 0 30;
+    margin: 0 3em;
 
 }
 
@@ -151,9 +147,14 @@ body {
 }
 
 .lista__link a:hover {
-    color: var(__botao-azul);
+    color: var(--botao-azul);
 }
 
 .lista__link a:active{
     color: purple;
+}
+
+.container__botao:hover {
+    background-color: var(--botao-azul-efeito);
+    color: var(--cor --cor-de-fundo);
 }
