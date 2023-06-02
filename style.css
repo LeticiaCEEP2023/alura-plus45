@@ -15,6 +15,10 @@ body {
     font-weight: 400;
 }
 
+*{
+    margin: 0; padding: 0;
+}
+
 
 .principal {
     background-image: url("Background.png");
@@ -22,6 +26,11 @@ body {
     background-size: contain;
     align-items: center;
     text-align: center;
+}
+
+.container__titulo {
+    font-size: 28px;
+    font-weight: 700;
 }
 
 .container {
@@ -51,11 +60,6 @@ body {
 
 }
 
-.container__titulo {
-    font-size: 20px;
-    font-weight: 700;
-}
-
 .container__imagem {
     margin: 1em 0 2em 0;
 }
@@ -77,7 +81,7 @@ body {
     font-weight: 700;
     font-size: 48px;
     color: var(--branco-principal);
-    margin-bottom: 00.1em;
+    margin-bottom: 0.1em;
 }
 
 .descricao__texto {
@@ -87,6 +91,8 @@ body {
 .secundario__botao{
     display: inline-block;
     margin-top: 1em;
+    background-color: transparent;
+    border: 2px solid var(--branco-principal);
 
 }
 
@@ -113,37 +119,36 @@ body {
 
 .lista__item {
     font-size: 32px;
-}
-
-
-.rodape__texto {
-    color: var(--cinza-secundario);
-    font-size: 14px;
-    margin: 2em 0;
-}
-
-
-.lista__link a{
     color: var(--branco-principal);
-    margin-left: 3em;
-    text-decoration: none;
-    
+}
+
+.rodape {
+    text-align: center;
+    margin: 5 3em;
+}
+
+.rodape__logo {
+    text-align: center;
 }
 
 .rodape__lista {
     display: flex;
     list-style-type: none;
     justify-content: center;
+    margin-top: 1em;
 }
 
-.rodape {
-    text-align: center;
-    margin: 0 3em;
-
+.lista__link a{
+    color: var(--branco-principal);
+    text-decoration: none;
+    margin-left: 1em;
+    
 }
 
-.rodape__logo {
-    margin-bottom: 2em;
+.rodape__texto {
+    color: var(--cinza-secundario);
+    font-size: 14px;
+    margin: 1em 0;
 }
 
 .lista__link a:hover {
